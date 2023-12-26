@@ -1,0 +1,83 @@
+// Use DBML to define your database structure
+// Docs: https://dbml.dbdiagram.io/docs
+
+Table fact_table {
+  VendorID integer
+  datetime_id integer
+  passenger_count_id integer
+  trip_distance_id integer
+  pickup_location_id integer
+  drop_location_id integer
+  rate_code_id integer
+  payment_type_id integer
+  fare_amount float
+  extra float
+  mta_tax float
+  tip_amount float
+  tolls_amount float
+  improvement_surcharge float
+  total_amount float
+}
+
+Table datetime_dim {
+  datetime_id integer [primary key]
+  tpep_pickup_datetime timestamp
+  pick_hour integer
+  pick_day integer
+  pick_month integer
+  pick_year integer
+  pick_weekday integer
+  tpep_dropoff_datetime timestamp
+  drop_hour integer
+  drop_day integer
+  drop_month integer
+  drop_year integer
+}
+
+Table passenger_count_dim {
+  passenger_count_id integer [primary key]
+  passenger_count integer
+}
+
+Table trip_distance_dim {
+  trip_distance_id integer [primary key]
+  trip_distance integer
+}
+
+Table pickup_location_dim {
+  pickup_location_id integer [primary key]
+  pickup_longitude float
+  pickup_latitude float
+}
+
+Table drop_location_dim {
+  drop_location_id integer [primary key]
+  drop_longitude float
+  drop_latitude float
+}
+
+Table rate_code_dim {
+  rate_code_id integer [primary key]
+  RatecodeID integer
+  rate_code_name varchar
+}
+
+Table payment_type_dim {
+  payment_type_id integer [primary key]
+  payment_type varchar
+  payment_type_name varchar
+}
+
+Ref: fact_table.passenger_count_id > passenger_count_dim.passenger_count_id // many-to-one
+
+Ref: fact_table.trip_distance_id < trip_distance_dim.trip_distance_id
+
+Ref: fact_table.datetime_id > datetime_dim.datetime_id 
+
+Ref: fact_table.pickup_location_id > pickup_location_dim.pickup_location_id
+
+Ref: fact_table.drop_location_id > drop_location_dim.drop_location_id
+
+Ref: fact_table.rate_code_id > rate_code_dim.rate_code_id
+
+Ref: fact_table.payment_type_id > payment_type_dim.payment_type_id
