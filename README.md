@@ -23,11 +23,10 @@ Welcome to the Uber Insight Engine project! This project aims to provide valuabl
    - Connect GCS with transformation step.
    
 2. **Transform data in Fact & Dimension tables**
-
    - Use a Python script for further transformation, converting a single flat file table to fact and dimension tables.
    - Make data model
 
-3. **Transform data in Fact & Dimension tables
+3. **Transform data in Fact & Dimension tables**
    - Use a Python script for further transformation, converting a single flat file table to fact and dimension tables.
    - Make data model
 
