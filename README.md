@@ -21,6 +21,11 @@ Welcome to the Uber Insight Engine project! This project aims to provide valuabl
    - Load data into GCS.
    - Make the data public for accessibility via URL.
    - Connect GCS with transformation step.
+   
+2. **Transform data in Fact & Dimension tables**
+
+   - Use a Python script for further transformation, converting a single flat file table to fact and dimension tables.
+   - Make data model
 
 3. **Transform data in Fact & Dimension tables
    - Use a Python script for further transformation, converting a single flat file table to fact and dimension tables.
@@ -34,11 +39,12 @@ Welcome to the Uber Insight Engine project! This project aims to provide valuabl
      - Create an interactive dashboard in Power BI.
      - Display informative information about the overall business.
 
-5. **Test API for Average Speed**
+6. **Test API for Average Speed**
    - Develop a test API to generate random average speed values within a specified range.
-   - Utilize the API to create a variable with details such as pickup and dropoff location, latitude and longitude information, trip distance, and time taken by the trip.
+       - Utilize the API to create a variable with details such as pickup and dropoff location, latitude and longitude information, trip    distance, and time taken by the trip.
    - Predict trip duration using the Random Forest model.
 
+Reference(Darshil Parmar YT Channel) : https://youtu.be/WpQECq5Hx9g?si=_tKOwjNUkdusUWLt
 
   Data Model:
   
