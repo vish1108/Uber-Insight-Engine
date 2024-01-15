@@ -26,19 +26,15 @@ Welcome to the Uber Insight Engine project! This project aims to provide valuabl
    - Use a Python script for further transformation, converting a single flat file table to fact and dimension tables.
    - Make data model
 
-3. **Transform data in Fact & Dimension tables**
-   - Use a Python script for further transformation, converting a single flat file table to fact and dimension tables.
-   - Make data model
-
-4. **Google BigQuery**
+3. **Google BigQuery**
    - Load multiple tables into Google BigQuery for analytics.
    - Created two data marts for Power BI & ETA prediction.
      
-5. **Data Visualization Mart (Power BI)**
+4. **Data Visualization Mart (Power BI)**
      - Create an interactive dashboard in Power BI.
      - Display informative information about the overall business.
 
-6. **Test API for Average Speed**
+5. **Test API for Average Speed**
    - Develop a test API to generate random average speed values within a specified range.
    - Utilize the API to create a variable with details such as pickup and dropoff location, latitude and longitude information, trip    distance, and time taken by the trip.
    - Predict trip duration using the Random Forest model.
@@ -60,7 +56,6 @@ Power BI Dashboard :
 
    ```bash
    git clone https://github.com/vish1108/uber-insight-engine.git
-   cd uber-insight-engine
 
    
 
